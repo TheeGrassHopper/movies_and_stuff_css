@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+#top_header {
+  padding: 1.5em 0; }
+  #top_header .logo {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 700; }
+    #top_header .logo span {
+      font-weight: 300;
+      color: #73e298; }
+  #top_header #main_nav {
+    float: right;
+    font-size: .9em;
+    padding-top: 1em; }
+    #top_header #main_nav a {
+      color: #8b8b9f;
+      text-decoration: none;
+      margin-left: 1em; }
+
+.menu {
+  display: none; }
+
+#banner {
+  background: url(../images/banner_background.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 6.5em 0; }
+  #banner #banner_content_wrapper {
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #banner #poster {
+    width: 275px;
+    position: relative;
+    float: left; }
+    #banner #poster .featured_image {
+      width: 100%;
+      max-width: 100%;
+      border-radius: .5em;
+      -webkit-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+      box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47); }
+    #banner #poster .play_button {
+      position: absolute;
+      width: 80px;
+      left: 50%;
+      top: 50%;
+      margin: -40px 0 0 -40px; }
+  #banner #content {
+    float: left;
+    width: 500px;
+    margin-left: 100px; }
+    #banner #content .title {
+      display: inline;
+      font-size: 1.75em;
+      color: #FFFFFF; }
+    #banner #content .ratings {
+      margin-left: 1em;
+      display: inline; }
+      #banner #content .ratings i {
+        color: #73e298;
+        font-size: 1.35em;
+        margin: 0 .15em; }
+      #banner #content .ratings .inactive {
+        color: #48494d; }
+    #banner #content .description {
+      color: #bbbebf;
+      font-size: 1em;
+      line-height: 2; }
+    #banner #content .info {
+      color: #FFFFFF;
+      font-size: .8em;
+      font-weight: 700;
+      margin-top: 3em; }
+      #banner #content .info span {
+        margin: 0 .5em; }
+
+.header {
+  text-align: center;
+  background: #73e298;
+  margin-bottom: 10px; }
+  .header h2 {
+    margin: 0;
+    padding: 10px; }
+
+#top_movies {
+  border-bottom: 1px solid #d4d4d4; }
+
+#top_movies, #top_header {
+  padding: 0; }
+  #top_movies header, #top_header header {
+    padding: 0 0 1.5em 0; }
+    #top_movies header h2, #top_header header h2 {
+      font-size: 1.75em; }
+    #top_movies header .view_more, #top_header header .view_more {
+      font-size: .8em; }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .wrapper .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .wrapper .post img {
+      border-radius: 3em;
+      width: 50%;
+      align-self: center;
+      box-shadow: 9px 10px 10px 10px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 9px 10px 10px 10px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 9px 10px 10px 10px rgba(0, 0, 0, 0.47); }
+
+#newsletter {
+  padding: 5em 0;
+  text-align: center;
+  background: #2a2a2e; }
+  #newsletter .newsletter_inner {
+    display: flex;
+    flex-direction: column; }
+    #newsletter .newsletter_inner h2 {
+      font-size: 1.75em;
+      color: #FFFFFF; }
+  #newsletter .sign_up_form {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center; }
+    #newsletter .sign_up_form input[type="text"], #newsletter .sign_up_form input[type="email"] {
+      width: 50%;
+      margin: 0.5%;
+      height: 3.25em;
+      border: none;
+      outline: none;
+      border-radius: .3em;
+      background: #404043;
+      padding: .5em 1.25em;
+      font-size: .8em;
+      color: #FFFFFF; }
+    #newsletter .sign_up_form .button {
+      border: none;
+      outline: none;
+      padding: 1em 4.5em;
+      border-radius: 2em;
+      background: #73e298;
+      color: #FFFFFF;
+      font-size: .9em;
+      font-weight: 700;
+      margin-top: 3em; }
+
+#main_footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  color: #8b8b9f;
+  padding: 2.5em 0;
+  margin: 0; }
+  #main_footer .logo {
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: black; }
+    #main_footer .logo span {
+      font-weight: 300;
+      color: #73e298; }
+  #main_footer .copyright {
+    color: #8b8b9f;
+    font-size: 1em;
+    margin: 0; }
+  #main_footer a {
+    color: #8b8b9f;
+    margin: 5px 10px 5px 10px;
+    text-decoration: none;
+    font-size: .75em; }
+    #main_footer a:hover {
+      color: #73e298; }
+
+@media (max-width: 900px) {
+  #top_header .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    #top_header .wrapper .menu {
+      display: block; }
+      #top_header .wrapper .menu i {
+        font-size: 1.5em;
+        color: #252529;
+        padding-top: .6em; }
+    #top_header .wrapper #main_nav {
+      display: none; }
+    #top_header .wrapper #main_nav.active {
+      display: block;
+      width: 100%; }
+      #top_header .wrapper #main_nav.active a {
+        display: block;
+        padding: 1em 0;
+        border-bottom: 1px solid #e9e9e9; }
+        #top_header .wrapper #main_nav.active a:last-child {
+          border-bottom: none; }
+      #top_header .wrapper #main_nav.active a:hover {
+        color: #73e298; }
+
+  .wrapper {
+    justify-content: center; }
+    .wrapper img {
+      width: 80%; }
+
+  .wrapper .post img {
+    width: 80%; } }
+@media (max-width: 683px) {
+  #banner_content_wrapper {
+    flex-direction: column; }
+    #banner_content_wrapper #poster {
+      width: 80%; }
+    #banner_content_wrapper #content {
+      width: 80%;
+      margin: 0; }
+
+  .wrapper .post img {
+    width: 50%; } }
+
+/*# sourceMappingURL=styles.css.map */
